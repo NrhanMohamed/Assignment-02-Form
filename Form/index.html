@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <form>
+        <fieldset style="background-color: red">
+            <legend style="background-color: lightblue;width:fit-content;">Personal Data</legend>
+
+            <br>
+            <br>
+            <fieldset style="background-color:yellow;">
+                <legend
+                    style="background-color: lightblue;padding: 10px;width:fit-content; height:75px;align-content: center;">
+                    Your Name</legend>
+
+                <table>
+                    <thead> </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="firstName">First Name </label></td>
+                            <td>:</td>
+                            <td><input name="firstName" minlength="7" type="text" placeholder="ex:Norhan">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastName">Second Name</label></td>
+                            <td>:</td>
+                            <td><input name="lastName" minlength="7" type="text" placeholder="ex:Ashraf"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <table>
+                <br>
+                <br>
+                <tbody>
+                    <tr>
+
+                        <td><label for="Phone">Your Phone</label></td>
+                        <td>:</td>
+                        <td><input name="phone" pattern="[0-9]{11}" maxlength="11" type="tel">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email </label></td>
+                        <td>:</td>
+                        <td><input name="userEmail" id="email" type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">password </label></td>
+                        <td>:</td>
+                        <td><input name="password" type="password" id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Re-password :</label></td>
+                        <td>:</td>
+                        <td><input name="re-password" type="password" id="re-password">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="radio" name="gender" value="male">Male<br />
+            <input type="radio" name="gender" value="female">Female<br />
+
+            <br>
+            <br>
+            <input type="checkbox" name="status" value="student">Student<br />
+            <input type="checkbox" name="status" value="graduated">Graduated<br />
+            <br>
+            <br>
+            <select name="select">
+                <optgroup label="Group 1">
+                    <option value="Auc"> Auc</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option value="MSA">MSA</option>
+                    <option value="GUC">GUC</option>
+                </optgroup>
+                <optgroup label="Group 3" disabled>
+                    <option value="MSA">MSA</option>
+                    <option value="MUST">MUST</option>
+                    <option value="MIU">MIU</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="image" src="./Image/submit.jpg" alt="submit" width="50">
+        </fieldset>
+    </form>
+</body>
+
+</html>
